@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jersey+10&family=Lilita+One&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+    <header class="header">
+        <img src="../icons/gamasutra_icon.png" alt="icono" class="icon-game-1">
+        <h2 class="title-header">Alura Geek</h2>
+        <img src="../icons/gamasutra_icon.png" alt="icono" class="icon-game-2">
+    </header>
+
+    <main class="container"> <!--CONTENIDO GENERAL-->
+
+        <h2 class="title_one">MIS PRODUCTOS</h2>
+
+        <section class="products"> <!--SECCION DE PRODUCTOS-->
+
+            <div class="container_products">
+                <ul class="cards" data-card> <!--CARD-->
+                </ul><!-- FINAL DE LA CARD-->
+            </div>
+
+        </section> <!--FIN DE LA SECCION DE PRODUCTOS-->
+
+        <!--SECCION PARA AGREGAR PRODUCTOS*-->
+        <h2 class="product_text product_text_a">AGREGAR PRODUCTO</h2>
+
+        <form class="form_add_product" data-formulario><!--INICIO DE FORMULARIO-->
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre.." data-nombre>
+            <br>
+            <input type="number" name="precio" id="precio" step="0.01" min="0.01" placeholder="Precio.." data-precio>
+            <br>
+            <input type="text" name="imagen" id="imagen" placeholder="URL de la imagen..." data-imagen>
+
+            <!--BOTONES-->
+            <div class="btn_products">
+                <input type="submit" value="ENVIAR" class="btn-submit">
+                <input type="submit" value="LIMPIAR" class="btn-clear">
+            </div>
+        </form> <!--FIN DEL FORMULARIO-->
+    </main> <!--FIN DEL CONTENIDO GENERAL-->
+
+    <footer class="footer">
+        <div class="footer_2">
+            <h3 class="text_footer">ALURA GEEK</h3>
+            <P class="footer_parraf">DESARROLLADO POR FRANCISCO ROCHA</P>
+            <!--IMAGENES ANIMACION-->
+            <div class="footer_icons">
+                <img src="../img/ghost-2.png" alt="ghost" class="ghost-1">
+                <img src="../img/ghost-3.png" alt="ghost" class="ghost-2">
+                <img src="../img/ghot-4.png" alt="ghost" class="ghost-3">
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/mostrarProductos.js" type="module"></script>
+    <script src="../JS/crearProducto.js" type="module"></script>
+</body>
+
+</html>

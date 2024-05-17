@@ -1,0 +1,50 @@
+/*ANIMACION ASTRONAUTA 1*/
+@keyframes flotar {
+    20%{
+        transform: translateY(20px);
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    60%{
+        transform: translateY(-20px);
+    }
+    80%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+/*ANIMACION ASTRONAUTA 2*/
+@keyframes flotar-dos {
+    20%{
+        transform: translateY(20px);
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    60%{
+        transform: translateY(-20px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+/*ANIMACION DE GHOST*/
+@keyframes ghost {
+    0%{
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
+/*ANIMACION DE CARD*/
+

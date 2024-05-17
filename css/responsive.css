@@ -1,0 +1,17 @@
+@media screen and (320px <=width <=480px) {
+
+    .header {
+        gap: 15%;
+        display: flex;
+        height: 170px;
+        align-items: center;
+        justify-content: center;
+    }
+    .title-header {
+        font-size: 30px;
+    }
+    .icon-game-1,
+    .icon-game-2{
+        display: none;
+    }
+}
