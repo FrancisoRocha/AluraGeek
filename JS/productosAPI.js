@@ -31,6 +31,24 @@ async function crearProducto (nombre,precio,imagen){
     return conexionConvertida;
 };
 
+//CREACION DEL METODOS DELETE PARA BORRAR PRODUCTO DEL JSON
+
+async function borrarProducto (productId){
+    const conexion = await fetch(`http://localhost:3001/productos/${productId}`,{
+        method: "DELETE",
+        headers:{
+            "content-type": "application/json" 
+        }
+    });
+    if(!conexion.ok){
+        throw new Error('Error al borrar el producto');
+    }
+
+    const conexionConvertida = await conexion.json();
+
+    return conexionConvertida;
+};
+
 export const productosAPI = {
-    listarProductos, crearProducto
+    listarProductos, crearProducto, borrarProducto
 };
