@@ -22,6 +22,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jersey+10&family=Lilita+One&family=Pixelify+Sans:wght@400..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 </head>
 
 <body>
@@ -38,8 +40,14 @@
 
         <section class="products"> <!--SECCION DE PRODUCTOS-->
 
-            <div class="container_products">
+            <div class="container_products" data-card-product>
                 <ul class="cards" data-card> <!--CARD-->
+                    <li class="target_cards">
+                        <img src="../img/mackbook.webp" alt="MacBook M3" class="img_product">
+                        <p class="text_product">MacBook Air M3</p>
+                        <p class="price_product">$ 250 USD</p>
+                        <button class="material-symbols-outlined" data-id="${}">delete</button>
+                    </li>
                 </ul><!-- FINAL DE LA CARD-->
             </div>
 
@@ -77,6 +85,7 @@
     </footer>
     <script src="../JS/mostrarProductos.js" type="module"></script>
     <script src="../JS/crearProducto.js" type="module"></script>
+    <script src="../JS/borrarPorducto.js" type="module"></script>
 </body>
 
 </html>
