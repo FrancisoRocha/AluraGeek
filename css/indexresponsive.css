@@ -19,6 +19,7 @@
         box-shadow: -11px 15px 1px 5px #000;
     }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
     .text{
