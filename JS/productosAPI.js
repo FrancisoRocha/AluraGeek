@@ -28,7 +28,7 @@ async function crearProducto(nombre, precio, imagen) {
     return conexionConvertida;
 };
 //FUNCION PARA BORRAR EL PRODUCTOR DE UI Y DEL JSON
-async function eliminarProducto (id){
+async function eliminarProducto(id){
     try{
         const conexion = await fetch(`http://localhost:3001/productos/${id}`,{
             method: "DELETE",

@@ -41,6 +41,12 @@
       "nombre": "Mochila Razer",
       "precio": "90 USD",
       "imagen": "https://www.nemesisec.gg/wp-content/uploads/2022/08/Mochila-razer.png"
+    },
+    {
+      "id": "2cfc",
+      "nombre": "iphone 15 pro",
+      "precio": "234 USD",
+      "imagen": "https://www.att.com/scmsassets/global/devices/phones/apple/apple-iphone-15-pro/carousel/blue-titanium-5.png"
     }
   ]
 }

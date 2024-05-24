@@ -32,29 +32,16 @@ body{
     margin-top: 3%;
     cursor: pointer;
     font-size: 60px;
-    margin-left: 25%;
+    margin-left: 40%;
     border-radius: 20px;
     transition: all 400ms;
     background: var(--color-uno);
     font-family: "Jersey 10", sans-serif;
 }
 .btn-1:hover{
-    color: var(--color-cinco);
-    background-color: #a9db1b;
-}
-.btn-2{
-    width: 320px;
-    border: none;
-    height: 102px;
     cursor: pointer;
-    margin-left: 3%;
-    font-size: 60px;
-    border-radius: 20px;
-    transition: all 400ms;
-    background: var(--color-uno);
-    font-family: "Jersey 10", sans-serif;
-}
-.btn-2:hover{
     color: var(--color-cinco);
     background-color: #a9db1b;
+    transform: translateY(-14px);
+    box-shadow: -11px 15px 1px 5px #000;
 }

@@ -131,7 +131,10 @@ body{
     border-radius: 60px;
     background: #a9db1b;
 }
-
+::-webkit-scrollbar-button{
+    width: 5px;
+    height: -3px;
+}
 /*SECCION PARA AGREGAR PRODUCTOS*/
 .product_text{
     width: 34%;
