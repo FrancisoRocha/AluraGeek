@@ -1,6 +1,6 @@
 //SOLICITUD AL ENDPOINT, PARA RECIBIR DATOS Y CONVERTIRLOS AL JSON PARA DESPUES SER DEVUELTOS  
 async function listarProductos() {
-    const conexion = await fetch("http://localhost:3001/productos", {
+    const conexion = await fetch("https://fake-api-umber-ten.vercel.app/productos", {
         method: "GET",
         headers: {
             "content-type": "application/json"
@@ -12,7 +12,7 @@ async function listarProductos() {
 };
 
 async function crearProducto(nombre, precio, imagen) {
-    const conexion = await fetch("http://localhost:3001/productos", {
+    const conexion = await fetch("https://fake-api-umber-ten.vercel.app/productos", {
         method: "POST", // ENVIAR DATOS AL SERVIDOR
         headers: {
             "content-type": "application/json" // CONEVERSION DE UN OBJETO JS A UNA CADENA JSON
@@ -30,7 +30,7 @@ async function crearProducto(nombre, precio, imagen) {
 //FUNCION PARA BORRAR EL PRODUCTOR DE UI Y DEL JSON
 async function eliminarProducto(id){
     try{
-        const conexion = await fetch(`http://localhost:3001/productos/${id}`,{
+        const conexion = await fetch(`https://fake-api-umber-ten.vercel.app/productos/${id}`,{
             method: "DELETE",
             headers: {
                 "content-type": "application/json" // CONEVERSION DE UN OBJETO JS A UNA CADENA JSON
